@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: gray;
+  color: aliceblue;
+}
+
+.container {
+  width: 600px;
+  background-color: black;
+  opacity: 0.6;
+}
+.container h1 {
+  font-weight: 400;
+  font-size: 30px;
+  padding: 10px 30px;
+}
+.wrapper {
+  margin: 30px;
+}
+.input-box {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  height: 55px;
+  background-color: black;
+  background: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  padding: 0 2.5rem 0 1rem;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  line-height: 55px;
+  color: gray;
+}
+.material-symbols-outlined:hover {
+  color: darkslateblue;
+}
+.copy {
+}
+.indicator {
+  width: 100%;
+  height: 5px;
+  position: relative;
+  margin-top: 15px;
+  border-radius: 20px;
+}
+.indicator::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transition: width 0.3s ease;
+}
+.indicator.weak::before {
+  width: 20%;
+  background: red;
+}
+.indicator.medium::before {
+  width: 50%;
+  background: orange;
+}
+.indicator.strong::before {
+  width: 100%;
+  background: green;
+}
+.password-length {
+  margin: 30px 20px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.length-line {
+  width: 100%;
+  height: 5px;
+  padding: 0;
+}
+
+.options {
+}
+
+.password-settings .options {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.options .option {
+  display: flex;
+  margin-bottom: 30px;
+  width: 50%;
+}
+
+.options .option input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.options .option label {
+  cursor: pointer;
+  color: rebeccapurple;
+  padding-left: 5px;
+}
+
+.generate-btn {
+  width: 100%;
+  height: 50px;
+  color: aliceblue;
+  background-color: blueviolet;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}

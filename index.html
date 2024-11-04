@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rkel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=copy_all"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Генератор паролей</h1>
+      <div class="wrapper">
+        <div class="input-box">
+          <input type="text" disabled />
+          <span class="material-symbols-outlined">copy_all</span>
+        </div>
+        <div class="indicator weak"></div>
+
+        <div class="password-length">
+          <div class="details">
+            <label for="">Длина пароля</label>
+            <span>16</span>
+          </div>
+          <input
+            type="range"
+            min="2"
+            max="32"
+            value="16"
+            step="2"
+            class="length-line"
+          />
+        </div>
+
+        <div class="password-settings">
+          <label for="">Настройки пароля</label>
+          <ul class="options">
+            <li class="option">
+              <input type="checkbox" id="lowercase" checked readonly disabled />
+              <label for="">(a-z)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="uppercase" />
+              <label for="">(A-Z)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="numbers" />
+              <label for="">цифры</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="symbols" />
+              <label for="">спец.символы</label>
+            </li>
+          </ul>
+        </div>
+        <button class="generate-btn">Сгенерировать пароль</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
